@@ -36,7 +36,7 @@ Estas foram as tecnologias utilizadas nesse projeto:
 ## Iniciando a aplicação
 
 1. Clone este repositorio usando `git@github.com:felipersdf/bethehero.git`
-2. Vá para a pasta raiz : `cd bethero`<br />
+2. Vá para a pasta raiz : `cd bethehero`<br />
 3. Use `yarn` para instalar as dependências<br />
 
 ### Iniciando o servidor backend
