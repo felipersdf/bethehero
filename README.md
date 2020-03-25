@@ -6,7 +6,7 @@
 Be The Hero
 </h1>
 
-<p align="center"> Uma aplicação web e mobile que simula um buscador de desenvolvedores  desenvolvido durante a semana OmniStack 11.0
+<p align="center"> Uma aplicação web e mobile que serve para que ONGs possam encontrar heróis disponíveis para resolver os seus casos desenvolvido durante a semana OmniStack 11.0
 </p>
 
 <p align="center">
@@ -30,13 +30,13 @@ Estas foram as tecnologias utilizadas nesse projeto:
 - 💹 **Node JS** 
 - ⚛️ **React JS** 
 - ⚛️ **React Native** 
-<!-- - 📄 **MongoDB**  -->
+- 📄 **SQLite** 
 <!-- - ♻️ **Socket IO**  -->
 
 ## Iniciando a aplicação
 
-1. Clone este repositorio usando `git@github.com:felipersdf/bethehro.git`
-2. Vá para a pasta raiz : `cd bethehro`<br />
+1. Clone este repositorio usando `git@github.com:felipersdf/bethehero.git`
+2. Vá para a pasta raiz : `cd bethero`<br />
 3. Use `yarn` para instalar as dependências<br />
 
 ### Iniciando o servidor backend
@@ -46,7 +46,7 @@ Estas foram as tecnologias utilizadas nesse projeto:
 
 ### Iniciando o app no frontend
 
-1. Vá para a pasta do frontend: `cd web`
+1. Vá para a pasta do frontend: `cd frontend`
 2. Use `yarn start` para o iniciar o app web
 <!-- 
 ### Iniciando o app mobile
