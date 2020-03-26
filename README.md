@@ -48,14 +48,20 @@ Estas foram as tecnologias utilizadas nesse projeto:
 
 1. Vá para a pasta do frontend: `cd frontend`
 2. Use `yarn start` para o iniciar o app web
-<!-- 
+
 ### Iniciando o app mobile
 
 1. Vá para a pasta do mobile: `cd mobile`
 2. Use `react-native run-android` (ou `run-ios` se você possuir um iOs) para iniciar o aplicativo mobile
 
 Nota: Se você escolher rodar no emulador android, você precisa iniciar o emulador antes de utilizar o comando `run-android`.
- -->
+
+
+#### Utilizando o expo no seu celular
+
+1. Instale o aplicativo Expo no seu celular (disponível na App Store [iOs] ou Google Play Store [Android] )
+2. Use `yarn start`
+3. Abra o Expo no seu celular e escaneie o QRCode.
 
 ## License
 
