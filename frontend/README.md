@@ -23,6 +23,10 @@ Be The Hero
 
 <hr />
 
+<h2 align="center">
+   Versão Web
+</h2>
+
 ## Páginas
 
 #### Página de Login
