@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
+import swal from 'sweetalert';
+import MaskedInput from 'react-text-mask';
 
 import api from '../../services/api';
 import './styles.css';
@@ -30,11 +32,23 @@ export default function Register() {
     try {
       const response = await api.post('ongs', data);
 
-      alert(`Seu ID de acesso: ${response.data.id}`);
+      swal({
+        title: `Seu ID de acesso é: ${response.data.id}`,
+        text: 'Copie para efetuar o logon!',
+        icon: 'warning',
+        button: true,
+        dangerMode: true,
+      });
 
       history.push('/');
     } catch (err) {
-      alert('Erro no cadastro. Tente novamente.');
+      swal({
+        title: 'Erro ao cadastrar!',
+        text: 'Tente nomvamente.',
+        icon: 'warning',
+        button: true,
+        dangerMode: true,
+      });
     }
   }
 
@@ -67,10 +81,31 @@ export default function Register() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <input
+          <MaskedInput
             placeholder="Whatsapp"
             value={whatsapp}
             onChange={(e) => setWhatsapp(e.target.value)}
+            maxLength={16}
+            guide={false}
+            onBlur={() => {}}
+            mask={[
+              '(',
+              /[1-9]/,
+              /\d/,
+              ')',
+              ' ',
+              /\d/,
+              ' ',
+              /\d/,
+              /\d/,
+              /\d/,
+              /\d/,
+              '-',
+              /\d/,
+              /\d/,
+              /\d/,
+              /\d/,
+            ]}
           />
           <div className="input-group">
             <input
@@ -83,6 +118,7 @@ export default function Register() {
               style={{ width: 80 }}
               value={uf}
               onChange={(e) => setUf(e.target.value)}
+              maxLength={2}
             />
           </div>
 
