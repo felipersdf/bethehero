@@ -15,7 +15,7 @@ Be The Hero App
    Versão Mobile
 </h2>
 
-## Páginas
+## Telas da Aplicação
 
 <div align="center">
 
