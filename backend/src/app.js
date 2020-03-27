@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const { errors } = require('celebrate');
-const routes = require('./routes');
+import express from 'express';
+import cors from 'cors';
+import { errors } from 'celebrate';
+import routes from './routes';
 
 const app = express();
 
