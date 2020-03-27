@@ -1,5 +1,5 @@
-import connection from '../database/connection';
-import generateUniqueId from '../utils/generateUniqueId';
+const generateUniqueId = require('../utils/generateUniqueId');
+const connection = require('../database/connection');
 
 module.exports = {
    async store(request, response) {
